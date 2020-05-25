@@ -8,4 +8,5 @@ Fillers are a specific type of disfluencies. Disfluencies can be defined as inte
 
 
 ## Approach
-A neural network approach has been attempted. Using the corpus [CallHome](https://catalog.ldc.upenn.edu/LDC97S42), we performed a forced alignment task between transcriptions and audio files using [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/).  This alignment allowed us to automatically assign tag to each frame of the speech, choice being between _silence_, _speech_, and _filler_. Then we fed a sequence tagger Neural network with the sequences of mfccs extracted at each above-mentioned frame.
+A neural network approach has been attempted. Using the corpus [CallHome](https://catalog.ldc.upenn.edu/LDC97S42), we performed a forced alignment task between transcriptions and audio files using [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/).  This alignment allowed us to automatically assign tag to each frame of the speech, choice being between _silence_, _speech_, and _filler_. 
+Finally we fed a sequence tagger Neural network with the sequences of Mel-frequency cepstral coefficients extracted over the above-mentioned frames.
