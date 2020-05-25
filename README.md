@@ -12,6 +12,6 @@ A neural network approach has been attempted. Using the corpus [CallHome](https:
 Finally we fed a sequence tagger Neural network with the sequences of Mel-frequency cepstral coefficients extracted over the above-mentioned frames.
 
 ## Notebook
-To run the notebook, you will need to install before hand the following python libraries: 
+To run the notebook, you will need to install before hand the following python libraries: Pydub, soundfile, textgrids, pandas, torch, torchaudio, and sklearn.
 Also, the following softwares are needed: [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/) (for the forced alignment process), [Sox](http://sox.sourceforge.net/) for the stereo-mono conversion.
 Afterward, the notebook is ready to run. 
